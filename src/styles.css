@@ -83,8 +83,9 @@ textarea {
 .brand-logo {
   width: 48px;
   height: 48px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 14px;
+  background: #fff;
   box-shadow: 0 10px 24px rgba(79, 111, 58, 0.16);
 }
 
@@ -433,6 +434,7 @@ textarea {
   padding: 26px;
   border-radius: 24px;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
 }
 
 .timeline {
@@ -592,6 +594,7 @@ textarea {
   display: flex;
   gap: 14px;
   margin-top: 12px;
+  flex-wrap: wrap;
 }
 
 .contact-actions a,
@@ -763,6 +766,10 @@ textarea {
     grid-template-columns: 1fr;
   }
 
+  .hero-copy {
+    padding: 10px 0 0;
+  }
+
   .hero-tags,
   .stats-grid {
     grid-template-columns: 1fr;
@@ -775,6 +782,16 @@ textarea {
 
   .section {
     padding: 72px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 26px;
+  }
+
+  .section-heading h2,
+  .form-copy h2,
+  .contact-section h2 {
+    font-size: clamp(1.8rem, 7vw, 2.4rem);
   }
 }
 
@@ -796,6 +813,21 @@ textarea {
     height: 44px;
   }
 
+  .brand {
+    font-size: 1.05rem;
+    gap: 10px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.1rem, 11vw, 2.8rem);
+  }
+
+  .eyebrow,
+  .section-kicker {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+
   .service-card,
   .feature-card,
   .resource-card,
@@ -811,5 +843,16 @@ textarea {
 
   .service-card {
     grid-template-columns: 1fr;
+  }
+
+  .contact-actions a,
+  .footer-socials a {
+    width: 44px;
+    height: 44px;
+    border-radius: 16px;
+  }
+
+  .footer-bottom {
+    text-align: center;
   }
 }

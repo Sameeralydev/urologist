@@ -16,6 +16,7 @@ import {
   MessageCircle,
   Microscope,
   Phone,
+  Pill,
   ShieldCheck,
   Sparkles,
   Stethoscope,
@@ -24,14 +25,14 @@ import {
   UserRound,
   X,
 } from 'lucide-react';
-import logo from '../medilogo.jpeg';
+import logo from '../logo.PNG';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'Services', href: '#services' },
   { label: 'Features', href: '#features' },
   { label: 'Testimonials', href: '#testimonials' },
-  { label: 'Request Demo', href: '#request-demo' },
+  { label: 'Appointments', href: '#appointments' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -47,42 +48,42 @@ const services = [
   {
     icon: Activity,
     title: 'Kidney Stone Treatment',
-    text: 'Targeted evaluation and treatment pathways for painful stones with clear aftercare guidance.',
+    text: 'Evidence-based assessment and minimally disruptive treatment planning for stone disease, supported by clear recovery guidance.',
   },
   {
     icon: HeartPulse,
     title: 'Prostate Care',
-    text: 'Preventive screening, symptom assessment, and personalized management plans for prostate health.',
+    text: 'Comprehensive review for prostate enlargement, screening needs, and symptom-led management strategies.',
   },
   {
     icon: TestTube2,
     title: 'Urinary Tract Infection Treatment',
-    text: 'Prompt diagnosis and practical treatment support to help patients recover comfortably.',
+    text: 'Clinical evaluation for recurrent or acute urinary infections with appropriate diagnostics and follow-up advice.',
   },
   {
     icon: UserRound,
     title: 'Male Infertility Consultation',
-    text: 'Private consultations focused on fertility concerns, diagnostics, and treatment planning.',
+    text: 'Confidential consultations addressing fertility concerns, hormonal review, and further diagnostic planning where required.',
   },
   {
     icon: ShieldCheck,
     title: 'Bladder Health',
-    text: 'Comprehensive support for bladder control issues, discomfort, and long-term monitoring.',
+    text: 'Structured care for bladder function concerns, urinary frequency, discomfort, and ongoing symptom monitoring.',
   },
   {
     icon: Stethoscope,
     title: 'Erectile Dysfunction Care',
-    text: 'Respectful care pathways that combine evaluation, counseling, and follow-up management.',
+    text: 'Professional assessment and management planning delivered with privacy, sensitivity, and continuity of care.',
   },
   {
     icon: Sparkles,
     title: 'Pediatric Urology',
-    text: 'Gentle care plans designed for children needing specialist urinary and kidney support.',
+    text: 'Specialist support for children requiring careful evaluation of urinary, bladder, or kidney-related conditions.',
   },
   {
     icon: TimerReset,
     title: 'Post-Surgery Follow-ups',
-    text: 'Structured recovery reviews with reminders, digital notes, and progress tracking.',
+    text: 'Planned post-procedure review pathways with recovery monitoring, medication review, and symptom tracking.',
   },
 ];
 
@@ -100,18 +101,18 @@ const features = [
 const steps = [
   {
     number: '01',
-    title: 'Book Appointment',
-    text: 'Choose a service, select your preferred date, and send your request in minutes.',
+    title: 'Request an Appointment',
+    text: 'Share your concern, preferred date, and contact details so the clinic can schedule the most suitable consultation slot.',
   },
   {
     number: '02',
-    title: 'Consult Urologist',
-    text: 'Meet with a specialist, review symptoms, and receive a clear treatment plan.',
+    title: 'Consult DR. JAMIL RAHEEM',
+    text: 'Attend a focused urology consultation with symptom review, clinical discussion, and individualized recommendations.',
   },
   {
     number: '03',
-    title: 'Track Treatment & Follow-ups',
-    text: 'Manage prescriptions, reports, reminders, and ongoing care through one flow.',
+    title: 'Continue Treatment & Follow-up',
+    text: 'Stay aligned with prescriptions, investigations, procedural advice, and planned review appointments.',
   },
 ];
 
@@ -143,10 +144,10 @@ const trustItems = [
 ];
 
 const resources = [
-  'When should you visit a urologist?',
-  'Common symptoms of kidney stones',
-  'Importance of prostate screening',
-  'How digital records improve patient care',
+  'When should you schedule a urology consultation?',
+  'Recognizing the common symptoms of kidney stones',
+  'Why timely prostate screening matters',
+  'How organized digital records improve continuity of care',
 ];
 
 const quickLinks = ['Home', 'Services', 'Features', 'Testimonials', 'Contact'];
@@ -203,13 +204,13 @@ function App() {
                 {link.label}
               </a>
             ))}
-            <a className="btn btn-primary nav-cta mobile-only" href="#request-demo" onClick={closeMenu}>
-              Book Consultation
+            <a className="btn btn-primary nav-cta mobile-only" href="#appointments" onClick={closeMenu}>
+              Schedule Visit
             </a>
           </nav>
 
-          <a className="btn btn-primary nav-cta desktop-only" href="#request-demo">
-            Book Consultation
+          <a className="btn btn-primary nav-cta desktop-only" href="#appointments">
+            Schedule Visit
           </a>
 
           <button
@@ -229,21 +230,22 @@ function App() {
             <div className="hero-copy">
               <div className="eyebrow">
                 <BadgeCheck size={16} />
-                Modern urology clinic experience
+                Consultant Urologist Care Pathway
               </div>
               <h1>
                 Advanced Urology Care & <span>Digital Patient Management</span>
               </h1>
               <p>
-                urologist helps patients and clinics manage urology consultations, appointments,
-                prescriptions, reports, and follow-ups with a clean and reliable healthcare experience.
+                DR. JAMIL RAHEEM provides structured urology consultations for kidney, prostate, urinary,
+                fertility, and post-treatment concerns with organized appointments, clinical documentation,
+                prescriptions, reports, and follow-up coordination.
               </p>
               <div className="hero-actions">
-                <a className="btn btn-primary" href="#request-demo">
-                  Book Appointment
+                <a className="btn btn-primary" href="#appointments">
+                  Schedule Consultation
                 </a>
                 <a className="btn btn-secondary" href="#contact">
-                  Request Demo
+                  Contact Clinic
                 </a>
               </div>
               <div className="hero-tags">
@@ -260,10 +262,10 @@ function App() {
               <div className="hero-panel">
                 <div className="panel-top">
                   <div>
-                    <p className="panel-label">Digital Care Snapshot</p>
-                    <h3>Coordinated urology visits with follow-up visibility</h3>
+                    <p className="panel-label">Clinical Care Overview</p>
+                    <h3>Consultation-led urology care with clear follow-up coordination</h3>
                   </div>
-                  <div className="panel-badge">Live Care</div>
+                  <div className="panel-badge">Specialist Care</div>
                 </div>
 
                 <div className="doctor-card">
@@ -271,27 +273,30 @@ function App() {
                     <Stethoscope size={34} />
                   </div>
                   <div>
-                    <h4>Specialist-led guidance</h4>
-                    <p>Assess symptoms, prescriptions, reports, and recovery notes in one place.</p>
+                    <h4>DR. JAMIL RAHEEM</h4>
+                    <p>
+                      Consultant Urologist providing professional assessment, treatment planning, and
+                      clinically organized follow-up care.
+                    </p>
                   </div>
                 </div>
 
                 <div className="stats-grid">
                   <div className="stat-card accent">
-                    <strong>24/7</strong>
-                    <span>Request intake</span>
+                    <strong>Kidney</strong>
+                    <span>Stone and urinary care</span>
                   </div>
                   <div className="stat-card">
-                    <strong>Secure</strong>
-                    <span>Patient history</span>
+                    <strong>Prostate</strong>
+                    <span>Screening and symptom review</span>
                   </div>
                   <div className="stat-card">
-                    <strong>Fast</strong>
-                    <span>Appointment workflows</span>
+                    <strong>Male Health</strong>
+                    <span>Fertility and dysfunction support</span>
                   </div>
                   <div className="stat-card accent-soft">
-                    <strong>Smart</strong>
-                    <span>Follow-up reminders</span>
+                    <strong>Follow-up</strong>
+                    <span>Reports and recovery planning</span>
                   </div>
                 </div>
               </div>
@@ -304,7 +309,7 @@ function App() {
             <div className="section-heading">
               <span className="section-kicker">Services</span>
               <h2>Specialized Urology Services</h2>
-              <p>Focused care pathways designed for patients who need clarity, comfort, and reliable follow-up.</p>
+              <p>Clinical services designed to support accurate assessment, appropriate treatment planning, and continuity of care.</p>
             </div>
             <div className="service-grid">
               {services.map(({ icon: Icon, title, text }) => (
@@ -327,7 +332,7 @@ function App() {
             <div className="section-heading">
               <span className="section-kicker">Features</span>
               <h2>Smart Features for Better Urology Care</h2>
-              <p>Built to support patient communication, clinical coordination, and a smooth front-desk workflow.</p>
+              <p>Operational tools that support streamlined appointments, organized records, and a more reliable patient experience.</p>
             </div>
             <div className="feature-grid">
               {features.map(({ icon: Icon, title }) => (
@@ -336,7 +341,7 @@ function App() {
                     <Icon size={22} />
                   </div>
                   <h3>{title}</h3>
-                  <p>Designed to reduce friction across consultations, records, reminders, and daily operations.</p>
+                  <p>Structured to support safer documentation, clearer communication, and efficient clinic coordination.</p>
                 </article>
               ))}
             </div>
@@ -348,7 +353,7 @@ function App() {
             <div className="section-heading">
               <span className="section-kicker">How It Works</span>
               <h2>Simple Steps to Start Care</h2>
-              <p>From first request to long-term follow-up, the experience stays clear and patient friendly.</p>
+              <p>From appointment request to ongoing review, each step is organized to keep care timely and clinically clear.</p>
             </div>
             <div className="timeline">
               {steps.map((step) => (
@@ -366,13 +371,13 @@ function App() {
           <div className="container">
             <div className="section-heading">
               <span className="section-kicker">Testimonials</span>
-              <h2>What Patients Appreciate</h2>
-              <p>Feedback centered on communication, clarity, and confidence during treatment.</p>
+              <h2>Patient Experience Highlights</h2>
+              <p>Experiences centered on professional communication, treatment clarity, and dependable follow-up.</p>
             </div>
             <div className="testimonial-grid">
               {testimonials.map((item) => (
                 <article className="testimonial-card" key={item.name}>
-                  <div className="stars">★★★★★</div>
+                  <div className="stars">5.0 / 5.0</div>
                   <p>"{item.text}"</p>
                   <strong>{item.name}</strong>
                 </article>
@@ -394,27 +399,27 @@ function App() {
           </div>
         </section>
 
-        <section className="section" id="request-demo">
+        <section className="section" id="appointments">
           <div className="container form-layout">
             <div className="form-copy">
-              <span className="section-kicker">Request Demo</span>
-              <h2>Book an Appointment or Request a Demo</h2>
+              <span className="section-kicker">Appointments</span>
+              <h2>Request an Appointment with DR. JAMIL RAHEEM</h2>
               <p>
-                Share your details and our team will guide you toward the right urology service, consultation,
-                or digital workflow setup.
+                Submit your details for appointment coordination. The clinic team will review your request and
+                contact you to confirm the most appropriate consultation schedule and service category.
               </p>
               <div className="info-list">
                 <div>
                   <BadgeCheck size={18} />
-                  Personalized care request handling
+                  Professional clinical intake for urology concerns
                 </div>
                 <div>
                   <BadgeCheck size={18} />
-                  Streamlined appointment coordination
+                  Structured appointment scheduling support
                 </div>
                 <div>
                   <BadgeCheck size={18} />
-                  Clear communication with follow-up support
+                  Clear communication regarding follow-up planning
                 </div>
               </div>
             </div>
@@ -453,7 +458,7 @@ function App() {
                 </label>
               </div>
               <button className="btn btn-primary submit-btn" type="submit">
-                Submit Request
+                Submit Appointment Request
                 <ArrowRight size={18} />
               </button>
             </form>
@@ -465,14 +470,14 @@ function App() {
             <div className="section-heading">
               <span className="section-kicker">Resources</span>
               <h2>Helpful Urology Reading</h2>
-              <p>Short educational topics to support informed care decisions and earlier consultations.</p>
+              <p>Short educational topics to support informed decisions, symptom awareness, and timely specialist review.</p>
             </div>
             <div className="resource-grid">
               {resources.map((item) => (
                 <article className="resource-card" key={item}>
                   <h3>{item}</h3>
-                  <p>Practical guidance written to help patients understand symptoms, screenings, and digital care support.</p>
-                  <a href="#request-demo">
+                  <p>Patient-focused guidance to better understand symptoms, investigations, screening needs, and care continuity.</p>
+                  <a href="#appointments">
                     Learn more <ArrowRight size={16} />
                   </a>
                 </article>
@@ -485,10 +490,14 @@ function App() {
           <div className="container contact-layout">
             <div>
               <span className="section-kicker">Contact</span>
-              <h2>Let’s Connect for Modern Urology Care</h2>
-              <p>Visit, call, or message us to discuss consultations, digital patient coordination, or clinic support.</p>
+              <h2>Contact the Clinic</h2>
+              <p>Reach out for appointment scheduling, consultation guidance, and urology-related care coordination.</p>
             </div>
             <div className="contact-card">
+              <div className="contact-item">
+                <Pill size={18} />
+                <span>DR. JAMIL RAHEEM, Consultant Urologist</span>
+              </div>
               <div className="contact-item">
                 <Mail size={18} />
                 <span>info@urologist.pk</span>
@@ -517,7 +526,7 @@ function App() {
               <img src={logo} alt="urologist logo" className="brand-logo" />
               <span>urologist</span>
             </a>
-            <p>Modern urology care platform for appointments, records, prescriptions and follow-ups.</p>
+            <p>Professional urology consultation platform for appointments, clinical records, prescriptions, and follow-up coordination.</p>
             <div className="footer-socials">
               <a href="tel:+923000000000" aria-label="Call">
                 <Phone size={18} />
@@ -536,7 +545,9 @@ function App() {
             <ul>
               {quickLinks.map((item) => (
                 <li key={item}>
-                  <a href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}>{item}</a>
+                  <a href={item === 'Home' ? '#home' : item === 'Services' ? '#services' : item === 'Features' ? '#features' : item === 'Testimonials' ? '#testimonials' : item === 'Contact' ? '#contact' : '#appointments'}>
+                    {item}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -553,7 +564,7 @@ function App() {
             </ul>
           </div>
         </div>
-        <div className="container footer-bottom">All rights reserved 2026 © urologist</div>
+        <div className="container footer-bottom">All rights reserved 2026 (c) urologist</div>
       </footer>
 
       {showSuccess && (
@@ -562,8 +573,8 @@ function App() {
             <div className="success-icon">
               <BadgeCheck size={28} />
             </div>
-            <h3>Request Submitted</h3>
-            <p>Thank you! Your request has been submitted successfully. Our team will contact you soon.</p>
+            <h3>Appointment Request Received</h3>
+            <p>Thank you. Your appointment request has been received successfully. Our clinic team will contact you shortly to confirm the consultation details.</p>
             <button type="button" className="btn btn-primary" onClick={() => setShowSuccess(false)}>
               Close
             </button>
