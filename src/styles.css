@@ -75,8 +75,6 @@ textarea {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  font-size: 1.2rem;
-  font-weight: 800;
   color: var(--primary-dark);
 }
 
@@ -87,6 +85,29 @@ textarea {
   border-radius: 14px;
   background: #fff;
   box-shadow: 0 10px 24px rgba(79, 111, 58, 0.16);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  line-height: 1;
+}
+
+.brand-text strong {
+  font-size: 1.18rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #17346d;
+}
+
+.brand-text em {
+  font-style: normal;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--primary-dark);
+  text-transform: lowercase;
 }
 
 .nav-links {
@@ -814,8 +835,16 @@ textarea {
   }
 
   .brand {
-    font-size: 1.05rem;
     gap: 10px;
+  }
+
+  .brand-text strong {
+    font-size: 0.92rem;
+    letter-spacing: 0.07em;
+  }
+
+  .brand-text em {
+    font-size: 0.96rem;
   }
 
   .hero-copy h1 {

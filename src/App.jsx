@@ -187,7 +187,10 @@ function App() {
         <div className="container nav-inner">
           <a className="brand" href="#home" onClick={() => setActiveLink('Home')}>
             <img src={logo} alt="urologist logo" className="brand-logo" />
-            <span>urologist</span>
+            <span className="brand-text">
+              <strong>DR. JAMIL RAHEEM</strong>
+              <em>urologist</em>
+            </span>
           </a>
 
           <nav className={`nav-links ${mobileOpen ? 'open' : ''}`}>
@@ -524,7 +527,10 @@ function App() {
           <div className="footer-brand">
             <a className="brand footer-brand-row" href="#home">
               <img src={logo} alt="urologist logo" className="brand-logo" />
-              <span>urologist</span>
+              <span className="brand-text">
+                <strong>DR. JAMIL RAHEEM</strong>
+                <em>urologist</em>
+              </span>
             </a>
             <p>Professional urology consultation platform for appointments, clinical records, prescriptions, and follow-up coordination.</p>
             <div className="footer-socials">
